@@ -1,0 +1,92 @@
+/**************************************/
+/*                Reset               */
+/**************************************/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote,
+a, abbr, address, cite,
+em, img,
+small, strong, sub, sup,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    -webkit-text-size-adjust: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+a {
+    color: #3B384C;
+    cursor: pointer;
+}
+:focus {
+    outline: 0;
+}
+ul {
+    list-style: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+th {font-weight: bold;}
+
+/**************************************/
+/*                Print               */
+/**************************************/
+body {
+    font: 12px/1.5 Tahoma, Arial, simsun, sans-serif;
+    color: #555;
+}
+a:link, a:visited, a:hover , a:active{
+    text-decoration: none;
+}
+h1 {font-size:18px;}
+h2 {font-size:16px;}
+h3 {font-size:14px;}
+h1,h2,h3,h4,h5,h6,strong {font-weight:bold;}
+/**************************************/
+/*              Meta Class            */
+/**************************************/
+
+/* location
+----------------------------------- */
+.tl{text-align:left;}
+.tc{text-align:center;}
+.tr{text-align:right;}
+.tj{text-align:justify;}
+.ul{text-decoration:underline;}
+.line-through { text-decoration: line-through; }
+.bc{margin-left:auto;margin-right:auto;}
+.fl{float:left;_display:inline;}
+.fr{float:right;_display:inline;}
+.cb{clear:both;}
+.cl{clear:left;}
+.cr{clear:right;}
+.vt{vertical-align:top;}
+.vm{vertical-align:middle;}
+.vb{vertical-align:bottom;}
+.pr, .loadWrap{position:relative;}
+.pa{position:absolute;}
+.of{overflow:hidden;}
+.none{display:none;}
+.show,.block{display:block;}
+.ib{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+.cp{cursor:pointer;}

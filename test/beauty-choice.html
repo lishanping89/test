@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>美丽精选</title>
+    <link href="css/base.css" rel="stylesheet" type="text/css" />
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/jkfall.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="header"></div>
+    <div class="nav">
+        <ul>
+            <li><a class="one_nav" href="javascript:void();"rel="suggest">美丽攻略<span class="icon line"> &nbsp;</span></a></li>
+            <li><a class=" cur one_nav" href="javascript:void();" rel="choice">丽人精选<span class="icon line"> &nbsp;</span></a></li>
+            <li class="my"><a href="javascript:void();">个人中心<span class=" arrow"> &nbsp;</span></a></li>
+        </ul>
+    </div>
+    <div class="wraper">
+        <div class="sort">排序：<span class="sort_btn btn_on">最新</span><span class="sort_btn ">最热</span></div>
+        <img class="banner" src="images/banner2.png" width="731" height="61" />
+        <div class="article_like">
+            <div class="article_like_content">
+                <img class="article_img" src="images/img7.jpg" width="202" height="228" />
+                <p class="fb">
+                    评分：<em class="icon grade_icon"></em><span class="grade">6.6</span>
+                </p>
+                <p class="fs12">棒子靓妆，轻松变漂亮~</p>
+                <a class="icon add_icon" href="javascript:void();">喜欢&nbsp;5678</a>
+                <div class="like_people">
+                    <span class="arrow"></span>
+                    <ul>
+                        <li><img src="images/head_icon.gif" width="35" height="35" /></li>
+                        <li><img src="images/head_icon.gif" width="35" height="35" /></li>
+                        <li><img src="images/head_icon.gif" width="35" height="35" /></li>
+                        <li><img src="images/head_icon.gif" width="35" height="35" /></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="article_like_content">
+                <img class="article_img" src="images/img6.jpg" width="202" height="274" />
+                <p class="fb">
+                    评分：<em class="icon grade_icon"></em><span class="grade">6.6</span>
+                </p>
+                <p class="fs12">棒子靓妆，轻松变漂亮~</p>
+                <a class="icon add_icon" href="javascript:void();">喜欢&nbsp;5678</a>
+                <div class="like_people">
+                    <span class="arrow"></span>
+                    <ul>
+                        <li><img src="images/head_icon.gif" width="35" height="35" /></li>
+                        <li><img src="images/head_icon.gif" width="35" height="35" /></li>
+                        <li><img src="images/head_icon.gif" width="35" height="35" /></li>
+                        <li><img src="images/head_icon.gif" width="35" height="35" /></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="article_like_content">
+                <img class="article_img" src="images/img10.jpg" width="202" height="235" />
+                <p class="fb">
+                    评分：<em class="icon grade_icon"></em><span class="grade">6.6</span>
+                </p>
+                <p class="fs12">棒子靓妆，轻松变漂亮~</p>
+                <a class="icon add_icon" href="javascript:void();">喜欢&nbsp;5678</a>
+                <div class="like_people">
+                    <span class="arrow"></span>
+                    <ul>
+                        <li><img src="images/head_icon.gif" width="35" height="35" /></li>
+                        <li><img src="images/head_icon.gif" width="35" height="35" /></li>
+                        <li><img src="images/head_icon.gif" width="35" height="35" /></li>
+                        <li><img src="images/head_icon.gif" width="35" height="35" /></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+             <img src="images/footer_bg.png" width="731" height="46" />
+         </div>
+    </div>
+    <!--[if lte IE 6]>
+    <script src="js/DD_belatedPNG.js" type="text/javascript"></script>
+    <script>
+        DD_belatedPNG.fix('.icon, .footer img , .nav');
+    <![endif]-->
+    <script>
+        $(function(){
+            function fall(){
+                var fall = $('.article_like_content').jkfall({
+                    itemWidth:0,
+                    container:$('.article_like'),
+                    autoResize:false,
+                    offset:18,
+                    outOffset:10,
+                    items:$('.article_like_content')
+                });
+                fall.getPostion();
+            }
+            fall();
+            var dataArr= [
+                [
+                    {
+                        "id":1,
+                        "description":"简介：天然泉水，直接从源泉取水，无菌灌装；纯净无菌，含所需的微量元素和二氧化硅，低矿物含量，喷雾后可在肌肤",
+                        "img":"images/img6.jpg",
+                        "price":130,
+                        "score":6.6,
+                        "like":5678
+                    },
+                    {
+                        "id":2,
+                        "description":"棒子靓妆，轻松变漂亮~",
+                        "img":"images/img7.jpg",
+                        "price":130,
+                        "score":6.6,
+                        "like":5677
+                    },
+                    {
+                        "id":3,
+                        "description":"简介：天然泉水，直接从源泉取水，无菌灌装；纯净无菌，含所需的微量元素和二氧化硅，低矿物含量，喷雾后可在肌肤",
+                        "img":"images/img8.jpg",
+                        "price":120,
+                        "score":6.6,
+                        "like":5678
+                    }
+                ],
+                [
+                    {
+                        "id":1,
+                        "description":"简介：天然泉水，直接从源泉取水，无菌灌装；纯净无菌，含所需的微量元素和二氧化硅，低矿物含量，喷雾后可在肌肤",
+                        "img":"images/img9.jpg",
+                        "price":130,
+                        "score":6.6,
+                        "like":5678
+                    },
+                    {
+                        "id":2,
+                        "description":"棒子靓妆，轻松变漂亮~",
+                        "img":"images/img10.jpg",
+                        "price":130,
+                        "score":6.6,
+                        "like":5677
+                    },
+                    {
+                        "id":3,
+                        "description":"简介：天然泉水，直接从源泉取水，无菌灌装；纯净无菌，含所需的微量元素和二氧化硅，低矿物含量，喷雾后可在肌肤",
+                        "img":"images/img8.jpg",
+                        "price":120,
+                        "score":6.6,
+                        "like":5678
+                    }
+                ],
+                [
+                    {
+                        "id":1,
+                        "description":"简介：天然泉水，直接从源泉取水，无菌灌装；纯净无菌，含所需的微量元素和二氧化硅，低矿物含量，喷雾后可在肌肤",
+                        "img":"images/img6.jpg",
+                        "price":130,
+                        "score":6.6,
+                        "like":5678
+                    },
+                    {
+                        "id":2,
+                        "description":"棒子靓妆，轻松变漂亮~",
+                        "img":"images/img7.jpg",
+                        "price":130,
+                        "score":6.6,
+                        "like":5677
+                    },
+                    {
+                        "id":3,
+                        "description":"简介：天然泉水，直接从源泉取水，无菌灌装；纯净无菌，含所需的微量元素和二氧化硅，低矿物含量，喷雾后可在肌肤",
+                        "img":"images/img8.jpg",
+                        "price":120,
+                        "score":6.6,
+                        "like":5678
+                    }
+                ]
+            ];
+            $(window).bind('scroll',addContent);
+            var index=0;
+            function addContent(){
+                if($(window).scrollTop() + $(window).height() > $(document).height() -20){
+                    if(index>2){
+                        alert("没有新的数据了");
+                    }else{
+                        getData(dataArr[index]);
+                        index++;
+                    }
+                }
+            }
+           function getData(arr){
+                    for(var i=0; i<arr.length; i++){
+                        var div=$("<div class='article_like_content' >"+
+                                "<img class='article_img' src=" + arr[i].img+ " width='202'  />"+
+                                "<p class='fb'>"+
+                                "评分：<em class='icon grade_icon'></em><span class='grade'>"+ arr[i].score +"</span>"+
+                                "</p>"+
+                                "<p class='fs12'>" + arr[i].description + "</p>"+
+                                "<a class='icon add_icon' href='javascript:void();'>喜欢&nbsp;"+ arr[i].like + "</a>"+
+                                "<div class='like_people'>"+
+                                "<span class='arrow'></span>"+
+                                "<ul>"+
+                                "<li><img src='images/head_icon.gif' width='35' height='35' /></li>"+
+                                "<li><img src='images/head_icon.gif' width='35' height='35' /></li>"+
+                                "<li><img src='images/head_icon.gif' width='35' height='35' /></li>"+
+                                "<li><img src='images/head_icon.gif' width='35' height='35' /></li>"+
+                                "</ul>"+
+                                "</div>"+
+                                "</div>");
+                        $(".article_like").append(div);
+                    }
+               fall();
+           }
+        })
+    </script>
+</body>
+</html>

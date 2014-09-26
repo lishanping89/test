@@ -1,0 +1,111 @@
+{
+    "data":[
+        {
+            "orderId":1,
+            "status":11,
+        "goods":[
+            {
+                "id":1,
+                "description":"简介：天然泉水，直接从源泉取水，无菌灌装；纯净无菌，含所需的微量元素和二氧化硅，低矿物含量，喷雾后可在肌肤",
+                "img":"images/img6.jpg",
+                "price":130,
+                "score":6.6,
+                "like":5678
+            },
+            {
+            "id":2,
+            "description":"棒子靓妆，轻松变漂亮~",
+            "img":"images/img7.jpg",
+            "price":130,
+            "score":6.6,
+            "like":5677
+            },
+            {
+            "id":3,
+            "description":"简介：天然泉水，直接从源泉取水，无菌灌装；纯净无菌，含所需的微量元素和二氧化硅，低矿物含量，喷雾后可在肌肤",
+            "img":"images/img8.jpg",
+            "price":120,
+            "score":6.6,
+            "like":5678
+            }
+
+        ]
+        }
+    ],
+    "res":0
+}
+
+
+/*
+ $(document).ready(function(){
+ var allHeight=[];
+ var Lstep = $(".article_like_content").width()+parseInt($(".article_like_content").css("marginLeft").replace('px',''));
+ var items = $('.article_like_content');
+ for(var i=0; i<items.length; i++){
+ if(i<3){
+ allHeight[i] = items.eq(i).height()+30;
+ items.eq(i).css({"left":Lstep*i,"top":0});
+ }else{
+ var minHeight = Math.min.apply(null,allHeight);
+ var gx = getIndex(allHeight,minHeight);
+ items.eq(i).css({"left":Lstep*gx,"top":minHeight});
+ allHeight[gx] += items.eq(i).height() +30;
+ }
+ }
+ maxheight=Math.max.apply(null,allHeight);
+ $('.article_like').css("height",maxheight);
+ $(window).bind('scroll',function(){
+ if($(document).scrollTop() + $(window).height() > $(document).height() -20){
+ getdata("./js/data.json",allHeight,Lstep);
+ maxheight=Math.max.apply(null,allHeight);
+ $('.article_like').css("height",maxheight);
+ }
+ })
+
+
+ })
+ function getdata(url,allHeight,Lstep){
+ var itemsLength = $('.article_like_content').length;
+ // alert(itemsLength);
+ $.get(url, function(result){
+ //alert(data.data[0].goods);
+ // var json = JSON.parse(result);
+ var goods=result.data[0].goods;
+ for(var i=0; i<goods.length; i++){
+ var div=$("<div class='article_like_content' >"+
+ "<img class='article_img' src=" + goods[i].img+ " width='202'  />"+
+ "<p class='fb'>"+
+ "评分：<em class='icon grade_icon'></em><span class='grade'>"+ goods[i].score +"</span>"+
+ "</p>"+
+ "<p class='fs12'>" + goods[i].description + "</p>"+
+ "<a class='icon add_icon' href='javascript:void();'>喜欢&nbsp;"+ goods[i].like + "</a>"+
+ "<div class='like_people'>"+
+ "<span class='arrow'></span>"+
+ "<ul>"+
+ "<li><img src='images/head_icon.gif' width='35' height='35' /></li>"+
+ "<li><img src='images/head_icon.gif' width='35' height='35' /></li>"+
+ "<li><img src='images/head_icon.gif' width='35' height='35' /></li>"+
+ "<li><img src='images/head_icon.gif' width='35' height='35' /></li>"+
+ "</ul>"+
+ "</div>"+
+ "</div>");
+ $(".article_like").append(div);
+ var minHeight = Math.min.apply(null,allHeight);
+ var gx = getIndex(allHeight,minHeight);
+ // alert(gx);
+ $('.article_like_content').eq(itemsLength+i).css({"left":Lstep*gx,"top":minHeight});
+ allHeight[gx] +=  $('.article_like_content').eq(itemsLength+i).height() +30;
+ }
+ maxheight=Math.max.apply(null,allHeight);
+ $('.article_like').css("height",maxheight);
+ })
+ }
+
+
+ function getIndex(array,item){
+ for(var i=0; i<array.length; i++){
+ if(array[i] == item){
+ return i;
+ }
+ }
+ }*/
